@@ -1,4 +1,4 @@
-export const services = [
+const services = [
   {
     id: 1,
     icon: "fa-solid fa-book-open fa-2x",
@@ -18,3 +18,4 @@ export const services = [
     text: "Vivamus porttitor orci eu pretium condimentum. Maecenas hendrerit facilisis lorem, quis euismod sem eleifend ut. Sed eget quam sit amet ",
   },
 ];
+export default services;

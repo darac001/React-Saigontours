@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import About from "./components/About";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Tours from "./components/Tours";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
-
 import data from "./tours_data";
-import Button from "react-bootstrap/Button";
 import MyCarousel from "./components/MyCarousel";
 
 // import Contact from "./component/Contact";
@@ -23,7 +20,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <MyCarousel/>      
+      <MyCarousel />
       {/* <Hero /> */}
       <About />
       <Services />

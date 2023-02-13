@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import contact_img from "../images/contact.jpg";
+
 
 const FORM_ENDPOINT = "";
 
