@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import About from "./components/About";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Tours from "./components/Tours";
+import Services from "./components/Services";
+import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 
+import data from "./tours_data";
+import Button from "react-bootstrap/Button";
+import MyCarousel from "./components/MyCarousel";
+
+// import Contact from "./component/Contact";
 function App() {
+  const [tours, setTours] = useState(data);
+
+  // remove tour function, we need to add it as a prop to the Tours render
+  const removeTour = (id) => {
+    const newTours = tours.filter((tour) => tour.id !== id);
+    setTours(newTours);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <MyCarousel/>      
+      {/* <Hero /> */}
+      <About />
+      <Services />
+      <Tours tours={tours} removeTour={removeTour} />
+      <ContactForm />
+      <Footer />
+    </>
   );
 }
 
