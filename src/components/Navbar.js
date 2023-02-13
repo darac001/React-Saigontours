@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import { FaBars } from "react-icons/fa";
-import { pageLinks } from "../links";
-import { socialLinks } from "../links";
+import pageLinks from "../links";
+import socialLinks from "../links_social";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(true);

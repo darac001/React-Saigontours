@@ -4,7 +4,7 @@ import tour3 from "./images/tour-3.png";
 import tour4 from "./images/tour-4.jpg";
 import tour5 from "./images/tour-5.jpg";
 
-export default [
+const data =[
   {
     id: 1,
     image: tour1,
@@ -56,3 +56,5 @@ export default [
     price: "C$13 per person",
   },
 ];
+
+export default data;
