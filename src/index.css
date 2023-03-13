@@ -51,6 +51,9 @@ body {
 }
 ul {
   list-style-type: none;
+
+  padding: 0 !important;
+  margin: 0 !important;
 }
 a {
   text-decoration: none;
@@ -472,7 +475,6 @@ Navbar
   display: none;
 }
 .links-container {
-  height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
