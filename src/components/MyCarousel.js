@@ -16,8 +16,7 @@ function MyCarousel() {
           <Carousel.Caption className="car-banner">
             <h1>Essence of Saigon</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              explicabo debitis est autem dicta.
+            Discover Saigon with our exciting and immersive tours
             </p>
             <a href="#tours" className="btn">
               explore tours
@@ -33,9 +32,7 @@ function MyCarousel() {
           <Carousel.Caption className="car-banner">
             <h1>food scene</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis optio animi exercitationem explicabo itaque voluptas
-              ias natus exercitationem quam. Nihil, dolorem ratione.
+            Indulge in the rich and diverse flavors of Saigon's food scene with our mouthwatering tours.
             </p>
             <a href="#tours" className="btn hero-btn">
               check it out
